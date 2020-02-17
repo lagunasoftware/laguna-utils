@@ -1,0 +1,14 @@
+doctype html
+html
+    include includes/head.pug  
+    body
+        header.show
+            .container 
+                h1 #{title}
+                h2 Important Things
+        each v, i in ['coffee ', 'Wifi', 'GitHub', 'Gaming break']
+            section 
+                .container
+                    h1= '#' + (i+1)
+                    h2= v
+        footer: .container: a(href='laguna.com.ar') Powered by Laguna
